@@ -81,7 +81,9 @@
                         <div class="inner-head">
                             <h3 class="fw-bold fs-4 my-3">Product table
                             </h3>
-                            <button class="btn btn-primary">Create</button>
+                            <a href="create-product.html">
+                                <button class="btn btn-primary">Create</button>
+                            </a>
                         </div>
                         <div class="inner-table">
                             <div class="row">
@@ -106,9 +108,31 @@
                                                     </td>
                                                     <td>Citizen</td>
                                                     <td>
-                                                        <a href="/admin/product/${product.id}" class="btn btn-success">View</a>
-                                                        <a href="/admin/product/update/${product.id}" class="btn btn-warning mx-2">Update</a>
-                                                        <a href="/admin/product/delete/${product.id}" class="btn btn-danger">Delete</a>
+                                                        <a href="viewdetail-product.html" class="btn btn-success">View</a>
+                                                        <a href="update-product.html" class="btn btn-warning mx-2">Update</a>
+                                                        <!-- Button trigger modal -->   
+                                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteWarningModal">
+                                                            Delete
+                                                        </button>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="deleteWarningModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Warning</h1>
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    Are you sure to delete this product?
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                                                                    <button type="button" class="btn btn-success">Yes</button>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr>

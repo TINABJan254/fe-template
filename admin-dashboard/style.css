@@ -251,6 +251,28 @@ a.sidebar-link:hover {
 }
 /*User update*/
 
+/*Product*/
+
+/* End product */
+.content .product-content{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.content .product-content .inner-product-image{
+    width: 27%;
+    margin-right: 40px;
+}
+
+.content .product-content .inner-product-image img{
+    width: 100%;
+    border: solid 1px;
+}
+
+.content .product-content .inner-product-info{
+    width: calc(67% - 40px);
+}
+
 /* End content  */
 
 /* form */
